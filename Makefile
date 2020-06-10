@@ -7,8 +7,8 @@
 
 setup:
 	# Create python virtualenv & source it
-	# source ~/.devops/bin/activate
-	python3 -m venv ~/.devops
+	python3 -m venv ~/.scalable-machine-learning-microservice-api
+	. ~/.scalable-machine-learning-microservice-api/bin/activate
 
 install:
 	# This should be run from inside a virtualenv

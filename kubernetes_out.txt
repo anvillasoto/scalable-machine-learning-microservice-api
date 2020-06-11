@@ -1,0 +1,22 @@
+(.scalable-machine-learning-microservice-api) ubuntu:~/environment/scalable-machine-learning-microservice-api (master) $ minikube start
+😄  minikube v1.11.0 on Ubuntu 18.04
+✨  Using the docker driver based on existing profile
+👍  Starting control plane node minikube in cluster minikube
+🔄  Restarting existing docker container for "minikube" ...
+🐳  Preparing Kubernetes v1.18.3 on Docker 19.03.2 ...
+    ▪ kubeadm.pod-network-cidr=10.244.0.0/16
+🔎  Verifying Kubernetes components...
+🌟  Enabled addons: default-storageclass, storage-provisioner
+🏄  Done! kubectl is now configured to use "minikube"
+(.scalable-machine-learning-microservice-api) ubuntu:~/environment/scalable-machine-learning-microservice-api (master) $ kubectl get pod
+NAME                                         READY   STATUS    RESTARTS   AGE
+scalable-machine-learning-microservice-api   1/1     Running   1          7m11s
+(.scalable-machine-learning-microservice-api) ubuntu:~/environment/scalable-machine-learning-microservice-api (master) $ ./run_kubernetes.sh 
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+Error from server (AlreadyExists): pods "scalable-machine-learning-microservice-api" already exists
+NAME                                         READY   STATUS    RESTARTS   AGE
+scalable-machine-learning-microservice-api   1/1     Running   1          7m37s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
